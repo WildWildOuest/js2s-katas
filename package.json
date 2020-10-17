@@ -1,0 +1,23 @@
+{
+  "name": "js2ts-katas",
+  "version": "1.0.0",
+  "description": "Javascript to Typescript katas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remi-bruguier/js2ts-katas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remi-bruguier/js2ts-katas/issues"
+  },
+  "homepage": "https://github.com/remi-bruguier/js2ts-katas#readme",
+  "devDependencies": {
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  }
+}
