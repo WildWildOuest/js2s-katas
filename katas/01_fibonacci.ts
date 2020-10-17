@@ -46,9 +46,9 @@ const fibonacci_ts_recursive = (num: number) => {
   return fibonacci_ts_recursive(num - 1) + fibonacci_ts_recursive(num - 2);
 }
 
-const fibonacci_ts_recursive_memoization = (num: number, cache:Map<number,number> = new Map<number,number>()) => {
+const fibonacci_ts_memoization = (num: number, cache:Map<number,number> = new Map<number,number>()) => {
   if (num <= 1) return 1;
-  if(!cache.has(num-1)) cache.set(num-1, fibonacci_ts_recursive_memoization(num - 1, cache));
-  if(!cache.has(num-2)) cache.set(num-2, fibonacci_ts_recursive_memoization(num - 2, cache));
-  return cache.get(num-1) + cache.get(num-2);
+  if(cache.has(num)) return cache.get(num);
+  cache.set(num, fibonacci_ts_memoization(num - 1, cache) + fibonacci_ts_memoization(num - 2, cache))
+  return cache.get(num);
 }
