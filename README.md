@@ -9,7 +9,7 @@ This is purely educational and a mean to help me progress, but feel free to cont
 ## Katas
 
 1. Fibonacci
-2.
-3.
+2. FizzBuzz
+3. Anagrams
 4.
 5.
