@@ -72,3 +72,9 @@ function romanNumeralsReworked(roman: string) {
         return table[arr[i + 1]] > table[cur] ? prev - table[cur] : prev + table[cur];
     }, 0);
 }
+
+/* cleverish */
+function cleverish(s: string): number {
+    var r: string = s.replace(/CM/g, 'DCCCC').replace(/CD/g, 'CCCC').replace(/XC/g, 'LXXXX').replace(/XL/g, 'XXXX').replace(/IX/g, 'VIIII').replace(/IV/g, 'IIII');
+    return 1000 * r.replace(/[^M]/g, '').length + 500 * r.replace(/[^D]/g, '').length + 100 * r.replace(/[^C]/g, '').length + 50 * r.replace(/[^L]/g, '').length + 10 * r.replace(/[^X]/g, '').length + 5 * r.replace(/[^V]/g, '').length + r.replace(/[^I]/g, '').length;
+}
