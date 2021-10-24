@@ -6,7 +6,8 @@ export default class DictionaryReplacer {
 
     if (typeof dictionary !== "undefined") {
       for (const [source, destination] of dictionary) {
-        input = input.replace(`$${source}$`, destination);
+        const sourceInstanecs = new RegExp(`\\$${source}\\$`, "g");
+        input = input.replace(sourceInstanecs, destination);
       }
       return input;
     }
