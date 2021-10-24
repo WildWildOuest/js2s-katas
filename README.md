@@ -13,3 +13,5 @@ This is purely educational and a mean to help me progress, but feel free to cont
 3. Anagrams  
 4. Valid parentheses
 5. Roman numerals
+6. Christmas tree
+7. Dictionary Replacer
