@@ -1,4 +1,9 @@
 export default class BeerSong {
+  versesBetween(start: number, end: number) {
+    const versesNumbers = Array.from({ length: start - end + 1 }, (_, index) => index + end).reverse();
+    return versesNumbers.map((verseNumber) => this.verse(verseNumber)).join('');
+  }
+
   verse(verseNumber: number) {
     if (verseNumber === 0) {
       return 'No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.\n';
