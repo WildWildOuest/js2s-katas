@@ -17,4 +17,10 @@ describe('99 bottles of beer', () => {
       '2 bottles of beer on the wall, 2 bottles of beer.\nTake one down and pass it around, 1 bottle of beer on the wall.\n';
     expect(song.verse(2)).toEqual(expectedVerse);
   });
+
+  it('returns the verse for any amout of bottles of beer superior to two', () => {
+    const expectedVerse =
+      '5 bottles of beer on the wall, 5 bottles of beer.\nTake one down and pass it around, 4 bottles of beer on the wall.\n';
+    expect(song.verse(5)).toEqual(expectedVerse);
+  });
 });
