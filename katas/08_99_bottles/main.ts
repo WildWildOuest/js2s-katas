@@ -1,5 +1,8 @@
 export default class BeerSong {
   verse(verseNumber: number) {
+    if (verseNumber === 0) {
+      return 'No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall.\n';
+    }
     if (verseNumber === 1) {
       return '1 bottle of beer on the wall, 1 bottle of beer.\nTake it down and pass it around, no more bottles of beer on the wall.\n';
     }
