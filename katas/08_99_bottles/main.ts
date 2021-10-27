@@ -1,5 +1,5 @@
 export default class BeerSong {
-  versesBetween(start: number, end: number) {
+  sing(start: number, end: number = 0) {
     const versesNumbers = Array.from({ length: start - end + 1 }, (_, index) => index + end).reverse();
     return versesNumbers.map((verseNumber) => this.verse(verseNumber)).join('');
   }
