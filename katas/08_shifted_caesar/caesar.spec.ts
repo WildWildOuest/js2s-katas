@@ -12,4 +12,10 @@ describe('shifted caesar', () => {
     const shift = 2;
     expect(shiftedCaesar(rawString, shift)).toEqual('ceg');
   });
+
+  it('should handle an initial shift of 5', () => {
+    const rawString = 'abc';
+    const shift = 5;
+    expect(shiftedCaesar(rawString, shift)).toEqual('fhj');
+  });
 });
